@@ -1,0 +1,10 @@
+{
+  "Modules": {
+
+    "SentimentAnalysis": {
+      "LaunchSettings": {
+        "FilePath": "SentimentAnalysis.dll"
+      }
+    }
+  }
+}
