@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
 	<!-- Set defines: Windows, Linux, macOS and/or Arm64. This is needed in some files! -->
-	<Import Project="../../CodeProject.AI-Server/src/SDK/NET/Common.targets" />
+	<Import Project="Common.targets" />
 
 	<!-- Common properties -->
 	<PropertyGroup>
@@ -40,16 +40,20 @@
 		<Content Include="favicon.ico" />
 	</ItemGroup>
 
+	<!--
 	<ItemGroup>
+		<ProjectReference Include="..\..\SDK\NET\NET.csproj" />
+	</ItemGroup>
+	-->
+
+	<ItemGroup>
+		<PackageReference Include="CodeProject.AI.Module.SDK" Version="1.0.1" />
+
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
 		<PackageReference Include="Microsoft.ML" Version="3.0.0" />
 		<PackageReference Include="Microsoft.ML.SampleUtils" Version="0.21.0" />
 		<PackageReference Include="Microsoft.ML.TensorFlow" Version="2.0.0" />
 		<PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.16.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\..\SDK\NET\NET.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
