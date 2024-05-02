@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+
+        {
+            "label": "build-sentimentanalysis",    // Builds ONLY the the .NET sentiment analysis module
+            "type": "process",
+            "group": "build",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/../CodeProject.AI-Modules/SentimentAnalysis",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

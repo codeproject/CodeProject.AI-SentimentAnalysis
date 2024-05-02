@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "presentation": {
+                "group": "Start",
+                "hidden": false
+            },
+
+            "name": "Launch Sentiment Analysis",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sentimentanalysis",
+            "program": "${workspaceFolder}/bin/Debug/net7.0/SentimentAnalysis",
+            // "args": [ "--selftest" ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "requireExactSource": false,
+            "justMyCode": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "RUNNING_IN_VSCODE": "true",
+
+                "DOTNET_NOLOGO": "true",
+                "MODELS_DIR": "${workspaceFolder}/sentiment_model",
+            }
+        }
+    ]
+}
