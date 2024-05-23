@@ -29,6 +29,6 @@ fi
 if [ "${executionEnvironment}" != "Production" ]; then
     pushd "$moduleDirPath" >/dev/null
     writeLine "Building project..." "$color_info"
-    dotnet build -c Debug -o "${moduleDirPath}/bin/Debug/net7.0" >/dev/null
+    dotnet build -c Debug -o "${moduleDirPath}/bin/Debug/net8.0" >/dev/null
     popd >/dev/null
 fi

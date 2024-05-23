@@ -9,7 +9,7 @@
             "command": "dotnet",
             "args": [
                 "build",
-                "${workspaceFolder}/../CodeProject.AI-Modules/SentimentAnalysis",
+                "${workspaceFolder}",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

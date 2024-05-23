@@ -3,7 +3,7 @@
 
     "SentimentAnalysis": {
       "LaunchSettings": {
-        "FilePath": "bin/Debug/net7.0/SentimentAnalysis.dll"
+        "FilePath": "bin/Debug/net8.0/SentimentAnalysis.dll"
       }
      }
   }

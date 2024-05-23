@@ -12,7 +12,7 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<UserSecretsId>dotnet-SentimentAnalysis-EBFB5149-7C8C-4D4E-96D1-6C0227E67E29</UserSecretsId>
 		<ApplicationIcon>favicon.ico</ApplicationIcon>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<Platform>AnyCPU</Platform>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 	</PropertyGroup>
@@ -49,7 +49,7 @@
 	<ItemGroup>
 		<PackageReference Include="CodeProject.AI.Module.SDK" Version="1.0.1" />
 
-		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
 		<PackageReference Include="Microsoft.ML" Version="3.0.0" />
 		<PackageReference Include="Microsoft.ML.SampleUtils" Version="0.21.0" />
 		<PackageReference Include="Microsoft.ML.TensorFlow" Version="2.0.0" />
