@@ -11,7 +11,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-sentimentanalysis",
-            "program": "${workspaceFolder}/bin/Debug/net8.0/SentimentAnalysis",
+            "program": "${workspaceFolder}/bin/Debug/net9.0/SentimentAnalysis",
             // "args": [ "--selftest" ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
