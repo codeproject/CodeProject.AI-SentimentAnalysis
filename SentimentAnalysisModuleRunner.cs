@@ -5,8 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-using CodeProject.AI.SDK;
 using CodeProject.AI.SDK.API;
+using CodeProject.AI.SDK.Backend;
+using CodeProject.AI.SDK.Common;
 
 namespace CodeProject.AI.Modules.SentimentAnalysis
 {
@@ -23,7 +24,7 @@ namespace CodeProject.AI.Modules.SentimentAnalysis
         public float? Positive_probability { get; set; }
     }
 
-    public class SentimentAnalysisWorker : ModuleWorkerBase
+    public class SentimentAnalysisModuleRunner : ModuleRunnerBase
     {
         private readonly TextClassifier _textClassifier;
 
@@ -34,10 +35,10 @@ namespace CodeProject.AI.Modules.SentimentAnalysis
         /// <param name="textClassifier">The TextClassifier.</param>
         /// <param name="configuration">The app configuration values.</param>
         /// <param name="hostApplicationLifetime">The applicationLifetime object</param>
-        public SentimentAnalysisWorker(ILogger<SentimentAnalysisWorker> logger,
-                                       TextClassifier textClassifier,  
-                                       IConfiguration configuration,
-                                       IHostApplicationLifetime hostApplicationLifetime)
+        public SentimentAnalysisModuleRunner(ILogger<SentimentAnalysisModuleRunner> logger,
+                                             TextClassifier textClassifier,  
+                                             IConfiguration configuration,
+                                             IHostApplicationLifetime hostApplicationLifetime)
             : base(logger, configuration, hostApplicationLifetime)
         {
             _textClassifier   = textClassifier;

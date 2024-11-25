@@ -9,13 +9,13 @@ namespace CodeProject.AI.Modules.SentimentAnalysis
     {
         static async Task Main(string[]? args)
         {
-            SentimentAnalysisWorker.ProcessArguments(args);
+            SentimentAnalysisModuleRunner.ProcessArguments(args);
 
             IHost host = Host.CreateDefaultBuilder(args)
                 .ConfigureServices(services =>
                 {
                     services.AddSingleton<TextClassifier>();
-                    services.AddHostedService<SentimentAnalysisWorker>();
+                    services.AddHostedService<SentimentAnalysisModuleRunner>();
                 })
                 .Build();
 
